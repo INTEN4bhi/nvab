@@ -46,3 +46,39 @@ body, html {
   transform: scale(1.2);
   filter: none;
 }
+.floating-developer {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+  animation: floatIn 1s ease-out forwards;
+}
+
+.floating-developer a {
+  background: #0000006c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.599);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.floating-developer a:hover {
+  background: #ffffff78;
+  transform: scale(1.05);
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
