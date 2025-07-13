@@ -22,7 +22,7 @@ body, html {
   margin: 10% auto;
   padding: 20px;
   text-align: center;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(2, 48, 78, 0.822);
 }
@@ -82,3 +82,45 @@ body, html {
   }
 }
 
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+  .profile-card {
+    max-width: 95vw;
+    margin: 25% auto 0 auto;
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    margin: 6px;
+  }
+  .floating-developer {
+    top: 8px;
+    left: 8px;
+  }
+  .floating-developer a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-card {
+    padding: 6px;
+    border-radius: 8px;
+  }
+  .profile-pic {
+    width: 64px;
+    height: 64px;
+  }
+  .social-icons img {
+    width: 18px;
+    margin: 4px;
+  }
+}
